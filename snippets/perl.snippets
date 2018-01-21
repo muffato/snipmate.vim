@@ -183,11 +183,11 @@ snippet map
 
 
 
-# Pod stub
+# Pod stub for modules
 snippet ppod
 	=head1 NAME
 
-	${1:ClassName} - ${2:ShortDesc}
+	${1:`expand('%:p:s?.*\(modules\|lib\)/??:r:gs?/?::?')`}
 
 	=head1 SYNOPSIS
 
