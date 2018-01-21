@@ -279,8 +279,8 @@ snippet debug_trace
 	};
 
 snippet dump
-	use Data::Dump qw(dump);
-	warn dump ${1:variable}
+	use Data::Dumper;
+	warn Dumper(${1:variable})
 
 snippet subtest
 	subtest '${1: test_name}' => sub {
