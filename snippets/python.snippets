@@ -1,6 +1,11 @@
 snippet #!
 	#!/usr/bin/env python
 
+snippet tsv
+	import csv
+	tsvwriter = csv.writer(sys.stdout, delimiter="\t")
+	tsvwriter.writerow([])
+
 snippet imp
 	import ${1:module}
 # Module Docstring
